@@ -60,6 +60,9 @@ WORKDIR /var/www/clinica/clinicallevant
 
 # Copia los archivos de tu proyecto Laravel al contenedor
 #COPY . .
+COPY ./.env /var/www/clinica/clinicallevant/vendor
+COPY ./vendor /var/www/clinica/clinicallevant/vendor
+
 
 #RUN php artisan serve --host 0.0.0.0
 # Expone el puerto 9000 para el servidor PHP-FPM
