@@ -63,7 +63,7 @@ WORKDIR /var/www/clinica/clinicallevant
 # Copia los archivos de tu proyecto Laravel al contenedor
 #COPY . .
 #COPY ./vendor /var/www/clinica/clinicallevant/vendor
-COPY ./.env /var/www/clinica/clinicallevant
+COPY .env .
 
 
 #RUN composer install
