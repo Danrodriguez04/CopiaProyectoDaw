@@ -1,6 +1,5 @@
 
-create database clinica;
-use clinica;
+use bdClinica;
 
 
 create table paises (
