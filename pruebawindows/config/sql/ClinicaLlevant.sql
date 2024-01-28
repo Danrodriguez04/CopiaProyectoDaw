@@ -1,5 +1,5 @@
 
-use bdClinica;
+/*use bdClinica;*/
 
 
 create table paises (

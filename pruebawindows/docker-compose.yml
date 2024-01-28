@@ -4,7 +4,7 @@ services:
   db:
     image: mariadb
     volumes:
-      - db-clinicallevantcopia:/var/lib/mysql
+      - clinicallevant-db:/var/lib/mysql
       - ./config/sql/:/docker-entrypoint-initdb.d
     environment:
       - MYSQL_ROOT_PASSWORD=secret
@@ -67,5 +67,5 @@ services:
     volumes:
       - ./mvc/src:/var/www/html  
 volumes:
-  db-clinicallevantcopia:
+  clinicallevant-db:
 
